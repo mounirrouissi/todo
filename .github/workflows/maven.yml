@@ -38,4 +38,4 @@ jobs:
         run: mvn install
 
       - name: Run tests
-        run: mvn --batch-mode --update-snapshots verify
+        run: mvn clean compile package -Dmaven.test.skip=true
